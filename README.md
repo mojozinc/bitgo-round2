@@ -14,20 +14,21 @@ Werkzeug 2.2.3
 ## sample APIs
 
 ### send notification
-curl --location 'localhost:5000/send_notifications' \
+
+`curl --location 'localhost:5000/send_notifications' \
 --header 'Content-Type: application/json' \
 --data-raw '{
 	"email_address_list": ["abc@example.com", "xyz@bitgo.com"],
     "notification_id": "b775d402-f4f0-4838-9924-91ad0f7493aa-01bcec038d"
-}'
+}'`
 
 ### add notification
-curl --location 'localhost:5000/set_notification' \
+`curl --location 'localhost:5000/set_notification' \
 --header 'Content-Type: application/json' \
 --data '{
     "payload": "best time to buy is 2008"
-}'
+}'`
 
 ### list notifications
-curl --location 'localhost:5000/list_notifications'
+`curl --location 'localhost:5000/list_notifications'`
 
